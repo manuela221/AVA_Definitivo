@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios | AVA</title>
+    <link rel="stylesheet" href="AVA.css/style.css?v=20261118-images-comments-feedback">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+     <header class="header">
+        <h1 class="logo">AVA</h1>
+
+        <nav class="navbar">
+            <a href="inicio.html">Inicio</a>
+            <a href="Quiénes somos.html">Quiénes somos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="preguntas.html" class="active">Preguntas</a>
+            <a href="Inscripciones.html">Inscripciones</a>
+        </nav>
+
+        <a href="contactanos.html" class="btn-contacto">
+            Contáctanos
+        </a>
+    </header>
+    <main class="contact-section comments-section">
+        <header class="contact-header">
+            <h1 class="contact-main-title">Comparte tu comentario</h1>
+            <p class="contact-subtitle">Nos interesa conocer tu opinión</p>
+        </header>
+
+        <section class="comments-content" aria-label="Comentarios">
+            <div class="comments-panel">
+                <h2 class="panel-title">Deja un comentario</h2>
+                <form class="comments-form" action="AVA.php/hola.php" method="POST">
+                    <label for="comment-email">
+                        Correo electrónico
+                        <input type="email" id="comment-email" name="comment-email" maxlength="254" autocomplete="email" required>
+                    </label>
+
+                    <label for="comment-message">
+                        Comentario
+                        <textarea id="comment-message" name="comment-message" maxlength="1000" required></textarea>
+                    </label>
+
+                    <button type="submit" class="comments-submit">Comentar</button>
+                </form>
+                <p class="comment-status" role="status" aria-live="polite" hidden></p>
+            </div>
+            
+        
+        </section>
+    </main>
+
+    <script src="AVA.js/java.js"></script>
+</body>
+
+</html>
